@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    @apply bg-base text-ink font-ui antialiased;
+  }
+  ::selection {
+    background: rgba(217, 164, 65, 0.35);
+  }
+  /* visible keyboard focus everywhere, no exceptions */
+  :focus-visible {
+    outline: 2px solid #d9a441;
+    outline-offset: 2px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2c2f38;
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3e4a;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+.tree-node:hover {
+  background: #2c2f38;
+}
+.tree-node.selected {
+  background: #2c2f38;
+  color: #d9a441;
+}
+.menu-item {
+  padding: 4px 20px;
+  cursor: pointer;
+  color: #e7e8ec;
+}
+.menu-item:hover {
+  background: #2c2f38;
+}
+/* src/index.css – add these */
+.prose {
+  max-width: 100%;
+}
+.prose h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0.25rem 0;
+  color: #e7e8ec;
+}
+.prose h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.25rem 0;
+  color: #e7e8ec;
+}
+.prose h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+  color: #e7e8ec;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.25rem;
+  margin: 0.25rem 0;
+}
+.prose li {
+  margin: 0.1rem 0;
+}
+.prose code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+}
+.prose pre {
+  background: #14151a;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+  border: 1px solid #2c2f38;
+  margin: 0.5rem 0;
+}
+.prose a {
+  color: #d9a441;
+  text-decoration: underline;
+}
+.prose a:hover {
+  color: #f0b429;
+}
+
+.markdown-content {
+  max-width: 100%;
+}
+.markdown-content h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0.25rem 0;
+  color: #e7e8ec;
+}
+.markdown-content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.25rem 0;
+  color: #e7e8ec;
+}
+.markdown-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+  color: #e7e8ec;
+}
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 1.25rem;
+  margin: 0.25rem 0;
+}
+.markdown-content li {
+  margin: 0.1rem 0;
+}
+.markdown-content code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+  background: #2c2f38;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  color: #d9a441;
+}
+.markdown-content pre {
+  background: #14151a;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+  border: 1px solid #2c2f38;
+  margin: 0.5rem 0;
+}
+.markdown-content pre code {
+  background: transparent;
+  padding: 0;
+  color: #e7e8ec;
+}
+.markdown-content a {
+  color: #d9a441;
+  text-decoration: underline;
+}
+.markdown-content a:hover {
+  color: #f0b429;
+}
+.markdown-content p {
+  margin: 0.25rem 0;
+}
