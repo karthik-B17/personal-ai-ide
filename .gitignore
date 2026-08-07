@@ -1,0 +1,104 @@
+# ========== Python ==========
+# Bytecode / compiled files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python distribution / packaging
+*.egg-info/
+*.egg
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+parts/
+var/
+*.tgz
+
+# Python test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Logs
+*.log
+
+# Database files (SQLite)
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Environment variables (with secrets)
+.env
+.env.local
+.env.*.local
+
+# Workspace state (auto‑generated)
+workspace.json
+
+# ========== Node / Frontend ==========
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Environment variables (frontend)
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ========== IDE / Editor ==========
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ========== OS / System ==========
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# ========== Project specific ==========
+# Backend workspace files (if generated)
+backend/workspace.json
+
+# Frontend build
+frontend/dist/
+frontend/build/
+
+# Database (if stored in root)
+chat_history.db
+
+# Logs
+logs/
+*.log
